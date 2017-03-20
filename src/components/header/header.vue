@@ -27,6 +27,21 @@
     <div class="bgBlur">
       <img :src="sellerData.avatar" width="100%" height="100%">
     </div>
+    <!--采用sticky footer 布局-->
+    <div class="cover">
+      <div class="cover-wrapper clearfix">
+        <div class="cover-main">
+          <!--你要展示的内容区域-->
+          <p>{{sellerData.bulletin}}</p>
+          <p>{{sellerData.bulletin}}</p>
+        </div>
+      </div>
+      <div class="cover-footer">
+        <!--字体图标没有搞好-->
+        <i class="icon-close">&gt;</i>
+      </div>
+    </div>
+
   </header>
 </template>
 
@@ -159,6 +174,33 @@
       z-index: -1
       filter: blur(10px);
     }
+    .cover {
+      width: 100%
+      height: 100%
+      position: fixed;
+      left: 0
+      top: 0
+      z-index: 100
+      background: rgba(7, 17, 27, 0.8);
+      backdrop-filter: blur(5px);
+      overflow: auto
+      .cover-wrapper {
+        min-height: 100%;
+        .cover-main {
+          padding-bottom: 68px
+          margin-top: 64px
+        }
+      }
+      .cover-footer {
+        position: relative
+        width: 32px
+        height: 32px
+        margin: -64px auto 0 auto;
+        clear: both;
+        font-size: 40px;
+      }
+    }
+
   }
 
 </style>
