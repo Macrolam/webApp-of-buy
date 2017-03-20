@@ -7,10 +7,10 @@
         <router-link to="/seller">商品</router-link>
       </li>
       <li>
-        <router-link to="/goods">goodds</router-link>
+        <router-link to="/goods">评价</router-link>
       </li>
       <li>
-        <router-link to="/ratings">ratings</router-link>
+        <router-link to="/ratings">商家</router-link>
       </li>
     </ul>
 
@@ -49,7 +49,7 @@
   body {
     background: pink;
     color: #fff;
-    font-size: 24px;
+    font-size: 14px;
   }
 
   .tab
